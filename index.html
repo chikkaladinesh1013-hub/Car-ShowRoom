@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the latest cars, compare specifications and request a test drive at Apex Motors.">
+  <title>Apex Motors | Find Your Drive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#"><span class="logo-mark">A</span> APEX<span class="logo-light">MOTORS</span></a>
+    <nav id="nav">
+      <a href="#models">Our cars</a><a href="#compare">Compare</a><a href="#features">Why Apex</a><a href="#test-drive">Test drive</a>
+    </nav>
+    <a class="header-cta" href="#test-drive">Book a test drive <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg-word">DRIVE</div>
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> THE ROAD IS YOURS</div>
+        <h1>Find your<br><em>next drive.</em></h1>
+        <p>Discover a collection of thoughtfully designed cars that bring together performance, comfort and technology.</p>
+        <div class="hero-actions"><a href="#models" class="button button-light">Explore models <span>↗</span></a><a href="#test-drive" class="watch-link">Book a test drive <span>→</span></a></div>
+        <div class="hero-stats"><div><strong>06</strong><span>Featured models</span></div><i></i><div><strong>24/7</strong><span>Online enquiries</span></div><i></i><div><strong>100%</strong><span>Drive your way</span></div></div>
+      </div>
+      <div class="hero-car">
+        <div class="hero-orbit"></div>
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1500&q=90" alt="Premium sports car displayed on a road">
+        <div class="hero-caption"><span>01 / 06</span><b>DESIGNED TO MOVE YOU</b></div>
+      </div>
+      <div class="hero-side-label">APEX COLLECTION — 2026</div>
+    </section>
+
+    <section class="intro-strip">
+      <span>BUILT FOR EVERY JOURNEY</span><p>From city streets to open highways, meet the car that feels like it was made for you.</p><a href="#models">Discover the collection ↗</a>
+    </section>
+
+    <section class="section models-section" id="models">
+      <div class="section-top"><div><div class="eyebrow dark"><span></span> THE APEX COLLECTION</div><h2>Meet your <em>match.</em></h2></div><p>Explore our featured range. Select a model to see its details, key specifications and indicative price.</p></div>
+      <div class="filter-row" id="filters">
+        <button class="filter active" data-filter="All">All models <span>06</span></button>
+        <button class="filter" data-filter="SUV">SUV</button>
+        <button class="filter" data-filter="Sedan">Sedan</button>
+        <button class="filter" data-filter="Electric">Electric</button>
+        <button class="filter" data-filter="Sport">Sport</button>
+      </div>
+      <div class="car-grid" id="carGrid">
+        <article class="car-card" data-type="SUV">
+          <div class="car-image"><img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1000&q=85" alt="Modern premium SUV"><span class="car-tag">ADVENTURE READY</span><span class="car-number">01</span></div>
+          <div class="car-info"><div><span class="car-type">SUV · 5 SEATER</span><h3>Terra X</h3></div><strong class="price">₹18.5 Lakh*</strong></div>
+          <p class="car-desc">Confident stance. Room for every plan.</p>
+          <div class="spec-row"><span><b>190</b> PS power</span><span><b>16.2</b> km/l*</span><span><b>6</b> airbags*</span></div>
+          <div class="card-actions"><button class="details-btn" data-car="Terra X">View details ↗</button><button class="compare-add" data-compare="Terra X">+ Compare</button></div>
+        </article>
+        <article class="car-card" data-type="Sedan">
+          <div class="car-image"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1000&q=85" alt="Sleek red performance sedan"><span class="car-tag">CITY ELEGANCE</span><span class="car-number">02</span></div>
+          <div class="car-info"><div><span class="car-type">SEDAN · 5 SEATER</span><h3>Linea S</h3></div><strong class="price">₹14.2 Lakh*</strong></div>
+          <p class="car-desc">A refined drive with a sporty edge.</p>
+          <div class="spec-row"><span><b>150</b> PS power</span><span><b>18.4</b> km/l*</span><span><b>6</b> airbags*</span></div>
+          <div class="card-actions"><button class="details-btn" data-car="Linea S">View details ↗</button><button class="compare-add" data-compare="Linea S">+ Compare</button></div>
+        </article>
+        <article class="car-card" data-type="Electric">
+          <div class="car-image"><img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1000&q=85" alt="Modern electric vehicle"><span class="car-tag">100% ELECTRIC</span><span class="car-number">03</span></div>
+          <div class="car-info"><div><span class="car-type">ELECTRIC · 5 SEATER</span><h3>Volt E</h3></div><strong class="price">₹22.9 Lakh*</strong></div>
+          <p class="car-desc">Quiet confidence. A new kind of energy.</p>
+          <div class="spec-row"><span><b>210</b> PS power</span><span><b>450</b> km range*</span><span><b>45</b> min charge*</span></div>
+          <div class="card-actions"><button class="details-btn" data-car="Volt E">View details ↗</button><button class="compare-add" data-compare="Volt E">+ Compare</button></div>
+        </article>
+        <article class="car-card" data-type="SUV">
+          <div class="car-image"><img src="https://images.unsplash.com/photo-1518557984649-4b6f2a9f5f8b?auto=format&fit=crop&w=1000&q=85" alt="Luxury dark SUV"><span class="car-tag">PREMIUM COMFORT</span><span class="car-number">04</span></div>
+          <div class="car-info"><div><span class="car-type">SUV · 7 SEATER</span><h3>Summit 7</h3></div><strong class="price">₹26.8 Lakh*</strong></div>
+          <p class="car-desc">More space for the moments that matter.</p>
+          <div class="spec-row"><span><b>205</b> PS power</span><span><b>14.8</b> km/l*</span><span><b>6</b> airbags*</span></div>
+          <div class="card-actions"><button class="details-btn" data-car="Summit 7">View details ↗</button><button class="compare-add" data-compare="Summit 7">+ Compare</button></div>
+        </article>
+        <article class="car-card" data-type="Sport">
+          <div class="car-image"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85" alt="Sporty luxury coupe"><span class="car-tag">PURE PERFORMANCE</span><span class="car-number">05</span></div>
+          <div class="car-info"><div><span class="car-type">SPORT · 2+2 SEATER</span><h3>Racer GT</h3></div><strong class="price">₹34.5 Lakh*</strong></div>
+          <p class="car-desc">Every curve has a reason. Every drive, a thrill.</p>
+          <div class="spec-row"><span><b>280</b> PS power</span><span><b>5.8</b> sec 0–100*</span><span><b>4</b> airbags*</span></div>
+          <div class="card-actions"><button class="details-btn" data-car="Racer GT">View details ↗</button><button class="compare-add" data-compare="Racer GT">+ Compare</button></div>
+        </article>
+        <article class="car-card" data-type="Sedan">
+          <div class="car-image"><img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=85" alt="Elegant executive sedan"><span class="car-tag">EXECUTIVE CLASS</span><span class="car-number">06</span></div>
+          <div class="car-info"><div><span class="car-type">SEDAN · 5 SEATER</span><h3>Regal LX</h3></div><strong class="price">₹29.7 Lakh*</strong></div>
+          <p class="car-desc">A calm, connected space for every mile.</p>
+          <div class="spec-row"><span><b>220</b> PS power</span><span><b>15.5</b> km/l*</span><span><b>8</b> airbags*</span></div>
+          <div class="card-actions"><button class="details-btn" data-car="Regal LX">View details ↗</button><button class="compare-add" data-compare="Regal LX">+ Compare</button></div>
+        </article>
+      </div>
+      <p class="disclaimer">*All vehicle names, specifications, mileage/range figures and prices shown are illustrative sample data for this website project, not official manufacturer claims or live offers. Actual specifications and on-road prices vary by variant and location.</p>
+    </section>
+
+    <section class="compare-section" id="compare">
+      <div class="section compare-inner">
+        <div class="section-top"><div><div class="eyebrow"><span></span> MAKE THE RIGHT CALL</div><h2>Compare your <em>favourites.</em></h2></div><p>Add up to three models from the collection to compare their key details side by side.</p></div>
+        <div class="compare-toolbar"><span id="compareCount">0 of 3 models selected</span><button id="clearCompare">Clear selection</button></div>
+        <div class="table-wrap"><table><thead><tr><th>Specification</th><th>Model 1</th><th>Model 2</th><th>Model 3</th></tr></thead><tbody id="compareTable"><tr><td colspan="4" class="empty-compare">Choose “+ Compare” on any car card to start comparing.</td></tr></tbody></table></div>
+      </div>
+    </section>
+
+    <section class="section features-section" id="features">
+      <div class="section-top"><div><div class="eyebrow dark"><span></span> THE APEX EXPERIENCE</div><h2>More than just <em>a car.</em></h2></div><p>We make exploring your next car clear, comfortable and convenient.</p></div>
+      <div class="feature-grid">
+        <article><span class="feature-icon">✦</span><h3>Curated collection</h3><p>Explore a considered range of vehicle styles, from practical family SUVs to exciting sport models.</p></article>
+        <article><span class="feature-icon">⌖</span><h3>Helpful guidance</h3><p>Understand the key features and compare models before you make your shortlist.</p></article>
+        <article><span class="feature-icon">↗</span><h3>Personal test drive</h3><p>Request a convenient appointment and experience your preferred model first-hand.</p></article>
+      </div>
+    </section>
+
+    <section class="test-drive" id="test-drive">
+      <div class="test-drive-image"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=1200&q=85" alt="Car parked on a scenic road"></div>
+      <div class="test-drive-content">
+        <div class="eyebrow"><span></span> TAKE THE DRIVER'S SEAT</div>
+        <h2>Your next drive<br>starts <em>here.</em></h2>
+        <p>Tell us what you're interested in. Our showroom team will get in touch to discuss an appointment.</p>
+        <form id="testDriveForm">
+          <div class="form-row"><label>Full name<input name="name" type="text" placeholder="Your name" required></label><label>Phone number<input name="phone" type="tel" placeholder="10-digit mobile number" pattern="[0-9+\-\s]{10,15}" required></label></div>
+          <div class="form-row"><label>Choose a model<select name="model" id="modelSelect" required><option value="">Select a car</option><option>Terra X</option><option>Linea S</option><option>Volt E</option><option>Summit 7</option><option>Racer GT</option><option>Regal LX</option></select></label><label>Preferred date<input name="date" type="date" id="driveDate" required></label></div>
+          <label class="full-label">Anything you'd like us to know? <textarea name="message" rows="3" placeholder="Preferred time or questions (optional)"></textarea></label>
+          <button class="button button-green" type="submit">Request a test drive <span>↗</span></button>
+          <small class="form-note">Demo form only. Your details are not sent or stored.</small>
+        </form>
+        <p class="form-success" id="formSuccess" role="status" hidden>Thanks! Your demo request is ready. In a live website, the showroom team would contact you.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="logo" href="#"><span class="logo-mark">A</span> APEX<span class="logo-light">MOTORS</span></a><p>Find the car that moves you.</p><div class="footer-links"><a href="#models">Our cars</a><a href="#compare">Compare</a><a href="#test-drive">Test drive</a></div><small>© 2026 Apex Motors. Educational demo website. Vehicle details are sample content.</small></footer>
+
+  <div class="modal" id="detailsModal" aria-hidden="true"><div class="modal-backdrop" data-close></div><div class="modal-box"><button class="modal-close" data-close aria-label="Close details">×</button><div id="modalContent"></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
